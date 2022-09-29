@@ -1,0 +1,14 @@
+{
+  "name": "odi-article-scraper",
+  "version": "1.0.0",
+  "description": "tool for scraping the odi website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodejs-web-scraper": "^6.1.0"
+  }
+}
