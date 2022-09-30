@@ -9,6 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "nodejs-web-scraper": "^6.1.0"
+    "airtable": "^0.11.5",
+    "dotenv": "^16.0.2",
+    "fs": "0.0.1-security",
+    "nodejs-web-scraper": "^6.1.0",
+    "uuid": "^9.0.0"
   }
 }
