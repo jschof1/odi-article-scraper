@@ -37,6 +37,20 @@ const nameDoc = (type) => {
       page[i].docUrl = fixedAddress.flat().join(", ");
     }
   }
+// teting cleanup 
+//   const formatPage = (page) => {
+//     page.title = page.title.join('');
+//     page.synopsis = page.synopsis.join('');
+//     page.date = page.date.join('');
+//     page.story = page.story.join('');
+//     page.categories = page.categories.join(', ');
+//     page.author = page.author.join(', ');
+//     if (page[i].docUrl !== undefined) {
+//     page.docUrl = page.docUrl.map( Object.values ).flat().join(', ')
+//     }
+// }
+
+page.map(formatPage)
 
   fs.writeFile(`cleaned${type}.json`, JSON.stringify(page), (err) => {
     if (err) throw err;
