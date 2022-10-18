@@ -61,8 +61,8 @@ There are many programmatic functionalities which are required to ensure the dat
 - The scraper needs to account for all the different URLs. Different URLs with different website layouts require different methods of extraction. Consequently, numerous different scrapers with different functions will need to be built. A YouTube video will need an entirely different scraper to the ODI article's scraper, and a Vimeo video will need an entirely different scraper to the SoundCloud scraper, and so on.
 - This program will run a scraper using the help of the `nodejs-web-scraper library`. It will search for the title, date, link, description, synopsis, categories, story, author, date in the Knowledge and Opinion section of the website.
 - When it has scraped the data, it will write the data to a JSON file. The data will be cleaned so that it is properly formatted for upload to the database.
-- **\*Side note:** the Week in Data cannot be scraped because there is no public facing URL. I will use a different method of downloading all the ones from the drive as a zip and then building a customised Word document scraper which gets all the important information from each Week in Data document.
-- **\*Side note 2:** The ODI's Toolkits are spread across multiple URLs as there is no 'route' process, this will have to be done manually.
+- **Side note:** the Week in Data cannot be scraped because there is no public facing URL. I will use a different method of downloading all the ones from the drive as a zip and then building a customised Word document scraper which gets all the important information from each Week in Data document.
+- **Side note 2:** The ODI's Toolkits are spread across multiple URLs as there is no 'route' process, this will have to be done manually.
 
 **Developers building steps**
 
