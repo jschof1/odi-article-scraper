@@ -24,9 +24,7 @@ function getPaginationUrls(address, { numPages, begin, end, offset = 1, queryStr
             paginationUrl = `${address}/${routingString}/${i}`.replace(/([^:]\/)\/+/g, "$1");
         }
         paginationUrls.push(paginationUrl)
-
     }
-
     return paginationUrls;
 }
 

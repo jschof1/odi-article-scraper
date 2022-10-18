@@ -8,8 +8,7 @@ const baseId = process.env.AIRTABLE_BASE_ID;
 
 const base = new airtable({apiKey: key}).base(baseId);
 
-
-const exporter = (type) => {
+exports.exporter = (type) => {
     let jsonFile = fs.readFileSync(`./cleaned${type}.json`, 'utf8');
     let page = JSON.parse(jsonFile);
 
@@ -36,7 +35,6 @@ const exporter = (type) => {
     }
 }
 
-exporter('guides');
 
 
 

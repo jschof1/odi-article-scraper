@@ -39,7 +39,6 @@ const checkYoutube = async (type) => {
     return brokenLinks;
 }
 
-
 // checkYoutube('Youtube Videos')
 
 
@@ -59,7 +58,7 @@ const checkVimeo = async (type) => {
     }
     return brokenLinks;
 }
-const checkSoundcloud = async (type) => {
+const checkSoundCloud = async (type) => {
     let allLinks = await getLinks(type);
     let brokenLinks = [];
     for (let i = 0; i < allLinks.length; i++) {
@@ -95,12 +94,6 @@ const checkLinks = async (type, url, splitUrl) => {
 
 checkLinks('Youtube Videos', 'youtube', 'v=')
 
-
-// checkSoundcloud('Podcasts')
-
-
-
-
 // check if webapge https://theodi.org/ contains h1 .page-title with text "Oops! That page can’t be found."
 const checkOdi = async (type) => {
     let allLinks = await getLinks(type);
@@ -124,4 +117,15 @@ const checkOdi = async (type) => {
 }
 
 checkOdi('Blog')
+
+
+module.exports = {
+    getLinks,
+    checkYoutube,
+    checkVimeo,
+    checkSoundCloud,
+    checkOdi
+}
+
+
 

@@ -38,9 +38,9 @@ function scrape(type, pageNumbers) {
       getPageObject,
     });
 
-      const docUrl = new OpenLinks("a.m_cta", {
-        name: "docUrl",
-      });
+    const docUrl = new OpenLinks("a.m_cta", {
+      name: "docUrl",
+    });
 
     const story = new CollectContent("div.wpb_content_element ", {
       name: "story",
@@ -93,4 +93,8 @@ function scrape(type, pageNumbers) {
   })();
 }
 
-scrape("guides", 1);
+module.exports = {
+  scrape
+}
+
+

@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-const nameDoc = (type) => {
+function nameDoc(type) {
   let jsonFile = fs.readFileSync(`./${type}.json`, "utf8");
   let page = JSON.parse(jsonFile);
 
@@ -49,8 +49,7 @@ const nameDoc = (type) => {
 //     page.docUrl = page.docUrl.map( Object.values ).flat().join(', ')
 //     }
 // }
-
-page.map(formatPage)
+// page.map(formatPage)
 
   fs.writeFile(`cleaned${type}.json`, JSON.stringify(page), (err) => {
     if (err) throw err;
@@ -58,4 +57,6 @@ page.map(formatPage)
   });
 };
 
-nameDoc("guides");
+module.exports = {
+  nameDoc
+};
