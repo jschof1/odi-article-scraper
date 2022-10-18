@@ -43,7 +43,7 @@ There are many programmatic functionalities which are required to ensure the dat
 
 ## 1. Scheduled executor
 
-- This application will capture all other programs and execute the other programs depending on the last time the entire program was last executed. For example, if the all the programs such as the scraper, convertor, intelligent tagger ran 7 days ago, this application will be able to 'watch' for this, and, once it has been 7 days it will execute all the programs.
+- This application will capture all scrapers, cleaners and taggers, executing every 7 days.
 - One caveat to this scheduling application is that it must ensure that it does not duplicate or overwrite old data. To ensure this, the scheduler must only scrape the data from the past 7 days of upload.
 
 **Developers building steps**
