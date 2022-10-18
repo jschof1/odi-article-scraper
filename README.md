@@ -1,6 +1,6 @@
 # cataloging ODI Outputs
 
-![SOURCES](./README.md)
+![sources](./odi-sources.svg)
 
 # The aim
 
